@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Empresa APP</string>
+    <string name="affirmation1">Empresa Walgreens.</string>
+    <string name="affirmation2">Empresa Lowe\'s.</string>
+    <string name="affirmation3">Empresa TJX Companies.</string>
+    <string name="affirmation4">Empresa Amazon.</string>
+    <string name="affirmation5">Empresa ExxonMobil.</string>
+    <string name="affirmation6">Empresa JPMorgan Chase.</string>
+    <string name="affirmation7">Empresa Costco.</string>
+    <string name="affirmation8">Empresa Sofia.</string>
+    <string name="affirmation9">Empresa Mi Rancho.</string>
+    <string name="affirmation10">Empresa CVS Health.</string>
+</resources>
