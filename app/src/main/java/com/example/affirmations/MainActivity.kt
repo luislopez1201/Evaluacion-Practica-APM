@@ -1,7 +1,7 @@
 
 package com.example.affirmations
+import android.annotation.SuppressLint
 import android.os.Bundle
-import android.text.Layout
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
@@ -15,7 +15,6 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.Card
 import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -27,7 +26,6 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.font.FontWeight
-import androidx.compose.ui.text.style.LineHeightStyle
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.affirmations.data.Datasource
@@ -59,27 +57,37 @@ fun AffirmationList(affirmationList: List<Affirmation>, modifier: Modifier = Mod
     }
 }
 
+@SuppressLint("ResourceType")
 @Composable
 fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
     Card(modifier = Modifier.padding(8.dp), elevation = 4.dp) {
         Column(modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center){
-            Image(
-                painter = painterResource(affirmation.imageResourceId),
-                contentDescription = stringResource(affirmation.stringResourceId),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(194.dp),
-                contentScale = ContentScale.Crop
-            )
             Text(
-                text = LocalContext.current.getString(affirmation.stringResourceId),
+                text = LocalContext.current.getString(affirmation.stringEmpresaId),
                 modifier = Modifier.padding(16.dp),
                 style = MaterialTheme.typography.h6,
                 fontWeight = FontWeight.Bold,
                 fontStyle = FontStyle.Italic,
                 color = Color.Red
+            )
+            Image(
+                painter = painterResource(affirmation.imageEmpresaId),
+                contentDescription = stringResource(affirmation.stringEmpresaId),
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(194.dp),
+                contentScale = ContentScale.Crop
+            )
+
+            Text(
+                text = LocalContext.current.getString(affirmation.anioEmpresaId),
+                modifier = Modifier.padding(16.dp),
+                style = MaterialTheme.typography.h6,
+                fontWeight = FontWeight.Bold,
+                fontStyle = FontStyle.Italic,
+                color = Color.Blue
             )
         }
     }
@@ -88,5 +96,5 @@ fun AffirmationCard(affirmation: Affirmation, modifier: Modifier = Modifier) {
 @Preview
 @Composable
 private fun AffirmationCardPreview() {
-    AffirmationCard (Affirmation(R.string.affirmation1, R.drawable.image1))
+    AffirmationCard (Affirmation(R.string.empresa1, R.drawable.empresa_img1, R.integer.anioempresa1))
 }

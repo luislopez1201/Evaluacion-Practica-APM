@@ -2,14 +2,25 @@
 
 <resources>
     <string name="app_name">Empresa APP</string>
-    <string name="affirmation1">Empresa Walgreens.</string>
-    <string name="affirmation2">Empresa Lowe\'s.</string>
-    <string name="affirmation3">Empresa TJX Companies.</string>
-    <string name="affirmation4">Empresa Amazon.</string>
-    <string name="affirmation5">Empresa ExxonMobil.</string>
-    <string name="affirmation6">Empresa JPMorgan Chase.</string>
-    <string name="affirmation7">Empresa Costco.</string>
-    <string name="affirmation8">Empresa Sofia.</string>
-    <string name="affirmation9">Empresa Mi Rancho.</string>
-    <string name="affirmation10">Empresa CVS Health.</string>
+    <string name="empresa1">Empresa Walgreens.</string>
+    <string name="empresa2">Empresa Lowe\'s.</string>
+    <string name="empresa3">Empresa TJX Companies.</string>
+    <string name="empresa4">Empresa Amazon.</string>
+    <string name="empresa5">Empresa ExxonMobil.</string>
+    <string name="empresa6">Empresa JPMorgan Chase.</string>
+    <string name="empresa7">Empresa Costco.</string>
+    <string name="empresa8">Empresa Sofia.</string>
+    <string name="empresa9">Empresa Mi Rancho.</string>
+    <string name="empresa10">Empresa CVS Health.</string>
+
+    <integer name="anioempresa1">1950</integer>
+    <integer name="anioempresa2">1970</integer>
+    <integer name="anioempresa3">1990</integer>
+    <integer name="anioempresa4">1997</integer>
+    <integer name="anioempresa5">2001</integer>
+    <integer name="anioempresa6">2005</integer>
+    <integer name="anioempresa7">2007</integer>
+    <integer name="anioempresa8">2010</integer>
+    <integer name="anioempresa9">2015</integer>
+    <integer name="anioempresa10">2020</integer>
 </resources>
